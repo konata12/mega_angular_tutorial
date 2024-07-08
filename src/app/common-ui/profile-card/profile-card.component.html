@@ -1,9 +1,22 @@
 <div class="profile-card">
     <div class="avatar-name">
         <img src="/assets/images/img.png" alt="avatar" class="avatar-name__img">
+
         <div class="avatar-name__name">
-            <p>Ryan Gosiling</p>
-            <span>ryan</span>
+            <p>Ryan Gosling</p>
+            <span>Ryan</span>
         </div>
+    </div>
+
+    <div class="profile-vard__description">
+        Список навыков, который мы обсудили выше, — основа резюме, но не
+        единственная его часть. Также можно рассказать о себе в классическом
+        смысле — этот раздел можно добавить в сопроводительное письмо.
+    </div>
+
+    <div class="profile-card__tags">
+        <app-skill-tag
+            *ngFor="let skill of skillTypes"
+            [skillType]="skill"></app-skill-tag>
     </div>
 </div>
